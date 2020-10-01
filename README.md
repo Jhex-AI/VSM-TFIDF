@@ -8,7 +8,7 @@ The set of documents that we have,
 
 ```python
 docA = "When Antony saw that Julius Caesar lay dead"
-docB = "The world saw the demise of Julius Caesar" 
+docB = "The world saw the demise of Julius Caesar"
 docC = "Antony saw Julius Caesar lay dead"
 docD = "It was him my cat"
 ```
@@ -21,6 +21,13 @@ We can infer that Document C is the most similar with A, Document B is less simi
 
 **Note: Cosine Similarity is not a very accurate measure to find similarity among documents**
 
-The reason being, for a  query suppose ```"the cat ate the mouse"``` and a document containing ```"the mouse ate the cat food"```. Looking at the words, we can say these documents are similar as this particular document contains all the words in the query but they are semantically dissimilar in meaning. When a user searches for a particular query, we can't simply return documents/results using word/text match. This is the drawback of cosine similarity for search based systems. 
+The reason being, for a query suppose `"the cat ate the mouse"` and a document containing `"the mouse ate the cat food"`. Looking at the words, we can say these documents are similar as this particular document contains all the words in the query but they are semantically dissimilar in meaning. When a user searches for a particular query, we can't simply return documents/results using word/text match. This is the drawback of cosine similarity for search based systems.
 
 Refer: [Semantic Similarity Ranking](https://github.com/Ittery/Semantic-Similarity-Ranking) to see a simple implementation for fixing this issue.
+
+## How to run ?
+
+1. Clone repository and navigate to directory.
+2. Create a virtual env `python -m venv env`
+3. Install all requirements `pip install -r requirements.txt`.
+4. Run `jupyter notebook` and open `TFIDF.ipynb`.
